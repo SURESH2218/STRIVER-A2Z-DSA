@@ -1,10 +1,9 @@
-    x
-   xxx
-  xxxxx
- xxxxxxx
-xxxxxxxxx
-xxxxxxxxx
- xxxxxxx
-  xxxxx
-   xxx
-    x
+x
+xx
+xxx
+xxxx
+xxxxx
+xxxx
+xxx
+xx
+x
