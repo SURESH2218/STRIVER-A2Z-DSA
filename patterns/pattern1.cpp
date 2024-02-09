@@ -14,6 +14,5 @@ void pattern(int n){
 int main(){
     int n;
     cin>>n;
-    // cout<<n;
     pattern(n);
 }
