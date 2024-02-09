@@ -1,9 +1,5 @@
-x
-xx
-xxx
-xxxx
-xxxxx
-xxxx
-xxx
-xx
-x
+E-
+D-E-
+C-D-E-
+B-C-D-E-
+A-B-C-D-E-
