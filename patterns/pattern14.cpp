@@ -54,8 +54,43 @@ void pattern18(int num)
     }
 }
 
+void pattern19(int num){
+    int spaces=0;
+    for(int i=0;i<num;i++){
+        for(int j=num;j>i;j--){
+            cout<<"x";
+        }
+        for(int j=0;j<spaces;j++){
+            cout<<"-";
+        }
+        for(int j=num;j>i;j--){
+            cout<<"x";
+        }
+
+        spaces+=2;
+        cout<<endl;
+    }
+
+    spaces = 2*num-2;
+    for(int i=1;i<=num;i++){
+        for(int j=1;j<=i;j++){
+            cout<<"x";
+        }
+        for(int j=1;j<=spaces;j++){
+            cout<<"-";
+        }
+        for(int j=1;j<=i;j++){
+            cout<<"x";
+        }
+    
+        spaces-=2;
+        cout<<endl;
+    }
+}
+
+
 int main(){
     int num;
     cin>> num;
-    pattern18(num);
+    pattern19(num);
 }
