@@ -1,1 +1,8 @@
+5 -> 2
+10 -> 3
+15 -> 1
+Max Freq element is -> 3 and the element is -> 10
+Min Freq element is -> 1 and the element is -> 15
+2
+3
 1
