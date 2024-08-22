@@ -13,6 +13,11 @@ public:
         data = data1;
         next = nullptr;
     }
+    Node(int data1, Node *next1)
+    {
+        data = data1;
+        next = next1;
+    }
 };
 
 Node *convertToLL(vector<int> &arr)
@@ -111,13 +116,33 @@ Node *removeElement(Node *head, int element)
     return head;
 }
 
+Node *insertHead(Node *head, int val)
+{
+    Node *temp = new Node(val, head);
+    return temp;
+}
+
+Node *insertTail(Node *head, int val)
+{
+    Node *temp = head;
+    while (temp->next != NULL)
+    {
+        temp = temp->next;
+    }
+    Node *newNode = new Node(val);
+    temp->next = newNode;
+    return head;
+}
+
 int main()
 {
     vector<int> arr = {1, 3, 4, 5, 9};
     Node *head = convertToLL(arr);
     // head = removeTail(head);
     // head = removeKthElement(head, 1);
-    head = removeElement(head, 5);
+    // head = removeElement(head, 5);
+    head = insertHead(head, 10);
+    head = insertTail(head, 44);
     Node *temp = head;
     while (temp)
     {
